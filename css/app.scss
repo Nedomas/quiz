@@ -1,4 +1,6 @@
 $main: #40dede;
+$md-height: 70px;
+$sm-height: 40px;
 
 // ensure that typeform takes up all the available screen space (DO NOT EDIT!)
 html {
@@ -24,14 +26,18 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-footer {
+header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 70px;
   background-color: #FFFFFF;
-  line-height: 70px;
   text-align: center;
+  font-weight: 400;
+  z-index: 100;
+
+  b {
+    font-weight: 900;
+  }
 
   a {
     text-decoration: none;
@@ -40,7 +46,6 @@ footer {
     background-color: $main;
     font-weight: 900;
     text-align: center;
-    padding: 15px;
     width: 200px;
     margin: 0 20px;
     border-bottom: 3px solid #35c0c0;
@@ -50,6 +55,27 @@ footer {
     &:hover {
       color: #fff;
       background-color: #35c0c0;
+      text-decoration: none;
+    }
+  }
+
+  .hidden-xs {
+    height: $md-height;
+    line-height: $md-height;
+
+    a {
+      padding: 15px;
+      width: 200px;
+    }
+  }
+
+  .visible-xs-12 {
+    height: $sm-height;
+    line-height: $sm-height;
+
+    a {
+      padding: 5px 10px;
+      width: 150px;
     }
   }
 }
