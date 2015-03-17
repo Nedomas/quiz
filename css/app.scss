@@ -35,9 +35,18 @@ header {
   font-weight: 400;
   z-index: 100;
 
+  span {
+    .share { 
+    color: #333; }
+  }
+  
+
+
+
   b {
     font-weight: 900;
   }
+
 
   a {
     text-decoration: none;
